@@ -1,4 +1,7 @@
 FROM nginx
+USER default
+EXPOSE 8080
+
 ENV AUTHOR=Docker
 
 WORKDIR /usr/share/nginx/html
