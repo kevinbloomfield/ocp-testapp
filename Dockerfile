@@ -17,6 +17,7 @@ EXPOSE 8080
 ENV NAME World
 
 USER root
+RUN chmod og+rw /app/app.py
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
